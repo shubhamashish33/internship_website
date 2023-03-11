@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/home_css/style.css">
+    <link rel="shortcut icon" href="./favicon_io/android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="assets/dropdown/css/style.css">
+    <link rel="stylesheet" href="assets/socicon/css/styles.css">
+    <link rel="stylesheet" href="assets/theme/css/style.css">
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+        as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+    </noscript>
+    <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css">
+    <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+
+</head>
+
+<body>
+    <section data-bs-version="5.1" class="menu menu1 cid-txY9dOt3V9" once="menu" id="menu1-l">
+
+
+        <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+            <div class="container">
+                <div class="navbar-brand">
+
+                    <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-7"
+                            href="./index.html">TASK PLANNER</a></span>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+                    data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <div class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="index.html#features2-b">Services</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="index.html#people5-k">About us</a></li>
+                        <li class="nav-item"><a class="nav-link link text-white text-primary display-4"
+                                href="index.html#form4-i">Contacts</a>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Task Planner</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">About us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav> -->
+
+    <div class="heading">
+        <h1>
+            Your Dashboard
+        </h1>
+    </div>
+    <!-- calender code -->
+    <ul class="weekmenu">
+        <li class="liactive"><a href="#" class="active">Plan Your Days</a></li>
+        <li><a href="#">Plan Your Week</a></li>
+        <li><a href="#">Plan Your Months</a></li>
+        <li><a href="#">Plan Your Quarter</a></li>
+        <li><a href="#">Plan Your Year</a></li>
+    </ul>
+    <!-- <div class="addTask">
+        <h3>
+            New Task?
+        </h3>
+        <button class="addbtn" onclick="showTask()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg></button>
+    </div> -->
+
+    <!-- addtask -->
+    <main>
+
+        <div class="newtask">
+            <h4>Add New Task</h4>
+            <section class="form-section">
+                <form onsubmit="handleAdd()" method="get">
+                    <input id="title" type="text" required class="input-text" placeholder="Task Name" />
+                    <input id="description" type="text" required class="input-text" placeholder="Description" />
+                    <button type="submit" class="btn-add">Add Task</button>
+                </form>
+            </section>
+        </div>
+
+        <section>
+            <div class="lists">
+
+                <div class="list" id="todo">
+                    <h2 class="list-header">To Do</h2>
+                </div>
+
+                <div class="list" id="inprogress">
+                    <h2 class="list-header">In Progress</h2>
+                </div>
+
+                <div class="list" id="done">
+                    <h2 class="list-header">Done</h2>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- <div class="task" id="task">
+        <h4 class="title"> Add to Your Schedule</h4>
+        <input type="text" name="taskname" id="taskname" placeholder="Task Name">
+        <input type="text" name="description" id="taskDescription" placeholder="Description">
+        <input type="date" name="datetime" id="datetime">
+        <button class="btn tasklist" onclick="addtasktoschedule()"> Add To Your Task </button>
+    </div> -->
+
+
+    <!-- <div class="listoftask 01" id="listoftask">
+        <p class="taskcont">#1</p>
+        <input type="checkbox" name="markascomplete" id="markascomplete">
+        <p class="showtaskname">Doctor Appointment</p>
+        <p class="showdescription">Go for health checkup</p>
+        <p class="showtime">Tomorrow 10 A:M </p>
+    </div>
+    <div class="listoftask 02">
+        <p class="taskcont">#2</p>
+        <input type="checkbox" name="markascomplete" id="markascomplete">
+        <p class="showtaskname"> Doctor Appointment </p>
+        <p class="showdescription"> Go for health checkup</p>
+        <p class="showtime"> Tomorrow 10 A:M </p>
+    </div>
+    <div class="listoftask 03">
+        <p class="taskcont">#3</p>
+        <input type="checkbox" name="markascomplete" id="markascomplete">
+        <p class="showtaskname"> Doctor Appointment </p>
+        <p class="showdescription"> Go for health checkup</p>
+        <p class="showtime"> Tomorrow 10 A:M </p>
+    </div>
+    <div class="listoftask 04">
+        <p class="taskcont">#4</p>
+        <input type="checkbox" name="markascomplete" id="markascomplete">
+        <p class="showtaskname"> Doctor Appointment </p>
+        <p class="showdescription"> Go for health checkup</p>
+        <p class="showtime"> Tomorrow 10 A:M </p>
+    </div> -->
+
+
+
+
+
+
+    <script src="./assets/js/home/script.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/smoothscroll/smooth-scroll.js"></script>
+    <script src="assets/ytplayer/index.js"></script>
+    <script src="assets/dropdown/js/navbar-dropdown.js"></script>
+    <script src="assets/theme/js/script.js"></script>
+    <script src="assets/formoid/formoid.min.js"></script>
+
+    <!-- MDB -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.js"></script>
+</body>
+
+</html>
