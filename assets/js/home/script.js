@@ -146,3 +146,11 @@ function handleAdd() {
   list[Object.keys(list).length] = task;
   storeListInLocalStorage(list);
 }
+
+//clear Task
+
+function clearTask() {
+  localStorage.clear();
+   location.reload();
+}
+
