@@ -14,15 +14,13 @@
   --text-color: #0d1b1e;
   --secondarycolor: #e5daff28;
 }
-.navbar{
+.navbar {
   background-color: var(--accentcolor) !important;
-  
 }
 
-.navbar-caption{
+.navbar-caption {
   font-family: "Gloock", serif !important;
   font-size: 30px !important;
-
 }
 
 body {
@@ -56,7 +54,7 @@ ul {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.nav-link{
+.nav-link {
   font-size: 20px;
 }
 
@@ -184,7 +182,6 @@ main {
   margin: 0 auto;
 }
 
-
 /* List Section */
 .lists {
   display: flex;
@@ -248,7 +245,7 @@ main {
   /* margin: 48px 0px 24px 0px; */
 }
 
-.newtask{
+.newtask {
   width: 60%;
   margin: auto;
   padding: 30px;
@@ -256,15 +253,13 @@ main {
   margin-bottom: 20px;
   border: 1px solid var(--accentcolor);
   border-radius: 12px;
-
 }
 
-input{
+input {
   background-color: var(--secondarycolor);
-
 }
 
-input:focus{
+input:focus {
   border: 2px solid var(--accentcolor);
 }
 
@@ -282,7 +277,28 @@ input:focus{
 .btn-add {
   padding: 12px 28px;
   color: white;
-  background-color: var(--accentcolor);
+  /* background-color: var(--accentcolor); */
+  background: hsla(276, 91%, 79%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(276, 91%, 79%, 1) 0%,
+    hsla(254, 74%, 65%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(276, 91%, 79%, 1) 0%,
+    hsla(254, 74%, 65%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(276, 91%, 79%, 1) 0%,
+    hsla(254, 74%, 65%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
   border: 1px solid white;
   border-radius: 8px;
   font-size: 16px;
@@ -291,7 +307,27 @@ input:focus{
 }
 
 .btn-add:hover {
-  background: var(--text-color);
+  background: hsla(276, 91%, 79%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(276, 91%, 79%, 1) 100%,
+    hsla(254, 74%, 65%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(276, 91%, 79%, 1) 100%,
+    hsla(254, 74%, 65%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(276, 91%, 79%, 1) 100%,
+    hsla(254, 74%, 65%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#D397FA", endColorstr="#8364E8", GradientType=1 );
   cursor: pointer;
   box-shadow: none;
 }
@@ -311,10 +347,6 @@ input:focus{
     min-width: 150px;
   }
 }
-
-
-
-
 
 @media screen and (max-width: 768px) {
   .menu {
