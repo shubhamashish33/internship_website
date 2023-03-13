@@ -122,10 +122,10 @@ ul {
   /* border-bottom: 0px; */
   margin: 10px;
 }
-.task input:focus, input:hover {
+.task input:focus,
+input:hover {
   border: 2px solid var(--accentcolor);
 }
-
 
 /* tasklist */
 
@@ -364,24 +364,28 @@ input:focus {
 }
 
 @media screen and (max-width: 768px) {
-  .weekmenu{
+  .weekmenu {
     overflow-x: auto;
     max-height: 200px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
-.weekmenu::-webkit-scrollbar{
-  width: 0px;
-}
+  .weekmenu::-webkit-scrollbar {
+    width: 0px;
+  }
+  .newtask{
+    width: 85%;
+    margin: auto;
+  }
 
- .weekmenu li{
-  margin-right: 10px;
-  padding: 0px;
-  min-width: 150px;
-  line-height: 50px;
-  text-align: center;
- }
-  .weekmenu li a{
+  .weekmenu li {
+    margin-right: 10px;
+    padding: 0px;
+    min-width: 150px;
+    line-height: 50px;
+    text-align: center;
+  }
+  .weekmenu li a {
     font-size: 13px;
     padding: 5px;
   }
