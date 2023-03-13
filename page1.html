@@ -85,7 +85,7 @@
             </div>
             <div class="row justify-content-center mt-4">
                 <div class="col-lg-8 mx-auto mbr-form" data-form-type="">
-                    <form action="dashboard.html" method="post" class="mbr-form form-with-styler mx-auto" data-form-title="Form Name">
+                    <form action="" class="mbr-form form-with-styler mx-auto" data-form-title="Form Name">
                         <!-- <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for
                                 filling out the form!</div>
@@ -95,16 +95,17 @@
                         </div> -->
                         <div class="dragArea row">
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="name">
-                                <input type="email" name="email" placeholder="Username" data-form-field="name"
-                                    class="form-control" value="" id="email" required>
+                                <input type="email" name="email" placeholder="Username" class="form-control" value=""
+                                    id="email" required>
                             </div>
 
                             <div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                                <input type="password" name="password" placeholder="Password" data-form-field="password"
-                                    class="form-control" value="" id="password" required>
+                                <input type="password" name="password" placeholder="Password" class="form-control"
+                                    value="" id="password" required>
                             </div>
                             <div class="col-auto mbr-section-btn align-center">
-                                <button type="submit" class="btn btn-primary display-4" onclick="auth()">Login</button>
+                                <button type="submit" value="Login
+                                " class="btn btn-primary display-4" onclick="auth()">Login</button>
                             </div>
                             <div class="mt-3 align-center">
                                 <p>Don't have an account? <a href="./page2.html" target="_blank">Signup</a></p>
@@ -139,7 +140,7 @@
             var password = document.getElementById("password").value;
 
             if (email == "admin@123" && password == "admin@123") {
-                location.assign("https://shubhamashish33.github.io/internship_website/dashboard.html");
+                window.location.href = "dashboard.html";
                 alert("Admin Login Sucessfull");
             }
             else {
