@@ -84,11 +84,8 @@
 
             </div>
             <div class="row justify-content-center mt-4">
-                <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
-                    <form action="https://mobirise.eu/" method="POST" class="mbr-form form-with-styler mx-auto"
-                        data-form-title="Form Name"><input type="hidden" name="email" data-form-email="true"
-                            value="TxGc0KIABAogelWyrXhrYHhYtu0RLdm1E3CnU3SjzLy5rHQiFk3Hmmw5AmMCPBwyxOy6Rk3E0bCjfQ9JFuDS6szs7q7rtN8cYdQ1U851uOi1G7BtyE4rn2g/mv4w6ulu">
-
+                <div class="col-lg-8 mx-auto mbr-form" data-form-type="">
+                    <form action="" class="mbr-form form-with-styler mx-auto" data-form-title="Form Name">
                         <!-- <div class="row">
                             <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for
                                 filling out the form!</div>
@@ -98,16 +95,16 @@
                         </div> -->
                         <div class="dragArea row">
                             <div class="col-lg-12 col-md-12 col-sm-12 form-group mb-3" data-for="name">
-                                <input type="text" name="name" placeholder="Username" data-form-field="name"
-                                    class="form-control" value="" id="name-form7-s" required>
+                                <input type="email" name="email" placeholder="Username" data-form-field="name"
+                                    class="form-control" value="" id="email" required>
                             </div>
 
                             <div data-for="phone" class="col-lg-12 col-md-12 col-sm-12 form-group mb-3">
-                                <input type="password" name="phone" placeholder="Password" data-form-field="phone"
-                                    class="form-control" value="" id="phone-form7-s" required> 
+                                <input type="password" name="password" placeholder="Password" data-form-field="password"
+                                    class="form-control" value="" id="password" required>
                             </div>
                             <div class="col-auto mbr-section-btn align-center">
-                                <button type="submit" class="btn btn-primary display-4">Login</button>
+                                <button type="submit" class="btn btn-primary display-4" onclick="auth()">Login</button>
                             </div>
                             <div class="mt-3 align-center">
                                 <p>Don't have an account? <a href="./page2.html" target="_blank">Signup</a></p>
@@ -136,13 +133,27 @@
         </div>
     </section>
 
+    <script>
+        function auth() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (email == "admin@123" && password == "admin@123") {
+                location.assign("dashboard.html");
+                alert("Admin Login Sucessfull");
+            }
+            else {
+                alert("Incorrect email or passwrod");
+                return;
+            }
+        }
+    </script>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/smoothscroll/smooth-scroll.js"></script>
     <script src="assets/ytplayer/index.js"></script>
     <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-    <script src="assets/theme/js/script.js"></script>
+    <!-- <script src="assets/theme/js/script.js"></script> -->
     <script src="assets/formoid/formoid.min.js"></script>
-
 
 </body>
 

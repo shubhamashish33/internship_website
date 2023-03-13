@@ -122,9 +122,10 @@ ul {
   /* border-bottom: 0px; */
   margin: 10px;
 }
-.task input:focus {
+.task input:focus, input:hover {
   border: 2px solid var(--accentcolor);
 }
+
 
 /* tasklist */
 
@@ -151,7 +152,7 @@ ul {
 
 .weekmenu li a {
   /* display: block; */
-  width: 100%;
+  font-size: 1rem;
   text-decoration: none;
   color: black;
   font-family: "Source Sans Pro", sans-serif;
@@ -218,6 +219,7 @@ main {
   width: 100%;
   background-color: var(--secondarycolor) !important;
   border: 1px solid var(--accentcolor);
+  filter: drop-shadow(10px 11px 11px rgba(45, 11, 255, 0.26));
 }
 
 .list-header {
